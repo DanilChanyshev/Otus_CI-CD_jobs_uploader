@@ -3,7 +3,7 @@
     name: uploader_scm
     scm:
       - git:
-          url: https://github.ru/saint88/ui_tests
+          url: https://github.com/DanilChanyshev/Otus_CI-CD_jobs_uploader.git
           credentials-id: ssh_key
           branches:
             - FETCH_HEAD
