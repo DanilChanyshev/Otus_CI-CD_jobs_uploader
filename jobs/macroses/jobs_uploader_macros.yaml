@@ -1,0 +1,10 @@
+---
+- scm:
+    name: uploader_scm
+    scm:
+      - git:
+          url: https://github.ru/saint88/ui_tests
+          credentials-id: ssh_key
+          branches:
+            - FETCH_HEAD
+          refspec: $REFSPEC
