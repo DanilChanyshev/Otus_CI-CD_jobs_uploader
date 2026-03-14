@@ -7,7 +7,7 @@
       - string:
           name: REFSPEC
           description: "Branch name"
-          default: master
+          default: main
     pipeline-scm:
       scm:
         - uploader_scm
