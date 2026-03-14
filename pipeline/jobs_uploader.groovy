@@ -11,7 +11,7 @@ def JOBS_DIR = "./jobs"
 
     node('maven') {
 
-        currentBuild.description = "<h3 style='color: red;'>Jobs uploader"
+        currentBuild.description = "<p style='color: red;'>Jobs uploader</p>"
 
         stage('Checkout') {
             checkout scm
