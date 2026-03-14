@@ -20,8 +20,8 @@ def JOBS_DIR = "./jobs"
         stage('Create conf.ini') {
             withCredentials([usernamePassword(credentialsId: "jenkins", usernameVariable: 'user', passwordVariable: 'pass')]) {
 
-                sh """"
-                cat > $CONF_FILE` << EOF
+                sh """
+                cat > $CONF_FILE << EOF
 [jenkins]
 url=$JENKINS_HOSTNAME/my_jenkins/
 user=$user
