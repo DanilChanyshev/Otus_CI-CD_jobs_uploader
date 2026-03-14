@@ -38,14 +38,4 @@ EOF
         stage('Deploy jobs to jenkins') {
             sh "jenkins-jobs --conf $CONF_FILE --flush-cache update $JOBS_DIR"
         }
-
-        stage('allure publish') {
-            allure ([
-                    includeProperties: false,
-                    jdk: '',
-                    properties: [],
-                    reportBuildPolicy: 'ALWAYS',
-                    results: [[path: 'allure-results']]
-            ])
-        }
     }
