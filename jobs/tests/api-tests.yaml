@@ -20,4 +20,4 @@
             branches:
               - master
 
-      script-path: Jenkinsfile
+      script-path: pipeline/api-test-pipeline.groovy
