@@ -18,6 +18,6 @@
             url: https://github.com/DanilChanyshev/OtusRestHW.git
             credentials-id: ssh_key
             branches:
-              - ${BRANCH}
+              - $${BRANCH}
 
       script-path: Jenkinsfile
