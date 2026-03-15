@@ -1,0 +1,23 @@
+---
+- job:
+    name: api-tests
+    description: "<p style='color: green;'>API tests pipeline</p>"
+
+    project-type: pipeline
+    concurrent: true
+
+    parameters:
+      - string:
+          name: BRANCH
+          default: master
+          description: "Git branch name"
+
+    pipeline-scm:
+      scm:
+        - git:
+            url: https://github.com/DanilChanyshev/OtusRestHW.git
+            credentials-id: ssh_key
+            branches:
+              - ${BRANCH}
+
+      script-path: Jenkinsfile

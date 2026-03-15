@@ -3,3 +3,4 @@
     name: test_name
     jobs:
       - jobs_uploader
+      - api-tests
