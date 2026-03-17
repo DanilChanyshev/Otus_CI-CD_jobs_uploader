@@ -1,0 +1,23 @@
+---
+- job:
+    name: ui-test
+    description: "<p style='color: green;'>API tests pipeline</p>"
+
+    project-type: pipeline
+    concurrent: true
+
+    parameters:
+      - string:
+          name: BRANCH
+          default: main
+          description: "Git branch name"
+
+    pipeline-scm:
+      scm:
+        - git:
+            url: https://github.com/DanilChanyshev/Otus.git
+            credentials-id: ssh_key
+            branches:
+              - main
+
+      script-path: pipeline/ui-test-pipeline.groovy
