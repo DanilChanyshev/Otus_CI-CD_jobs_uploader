@@ -1,7 +1,7 @@
 ---
 - job:
     name: ui-test
-    description: "<p style='color: green;'>API tests pipeline</p>"
+    description: "<p style='color: green;'>UI tests pipeline</p>"
 
     project-type: pipeline
     concurrent: true
