@@ -9,15 +9,15 @@
     parameters:
       - string:
           name: BRANCH
-          default: main
+          default: ansible
           description: "Git branch name"
 
     pipeline-scm:
       scm:
         - git:
-            url: https://github.com/DanilChanyshev/Otus.git
+            url: https://github.com/DanilChanyshev/OTUS-hm-selenium.git
             credentials-id: ssh_key
             branches:
-              - main
+              - ansible
 
       script-path: pipeline/ui-test-pipeline.groovy
