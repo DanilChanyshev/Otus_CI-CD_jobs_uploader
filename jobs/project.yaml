@@ -5,3 +5,5 @@
       - jobs_uploader
       - api-tests
       - ui-test
+      - mobile-tests
+      - running-tests

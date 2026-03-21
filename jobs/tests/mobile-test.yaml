@@ -1,0 +1,23 @@
+---
+- job:
+    name: mobile-tests
+    description: "<p style='color: green;'>Mobile tests pipeline</p>"
+
+    project-type: pipeline
+    concurrent: true
+
+    parameters:
+      - string:
+          name: BRANCH
+          default: main
+          description: "Git branch name"
+
+    pipeline-scm:
+      scm:
+        - git:
+            url: https://github.com/DanilChanyshev/MobileTest.git
+            credentials-id: ssh_key
+            branches:
+              - main
+
+      script-path: pipeline/mobile-test-pipeline.groovy
