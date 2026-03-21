@@ -20,4 +20,4 @@
           default: false
           description: Run Mobile tests
 
-    dsl: !include-raw: pipeline/run_tests.groovy
+    dsl: !include-raw-expand: pipeline/run_tests.groovy
