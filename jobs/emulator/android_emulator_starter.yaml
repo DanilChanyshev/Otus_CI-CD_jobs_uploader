@@ -9,7 +9,8 @@
     parameters:
       - string:
           name: BRANCH
-          default: jenkins-job
+#          default: jenkins-job
+          default: ansible
           description: "Git branch name"
 
     pipeline-scm:
@@ -19,6 +20,6 @@
             url: https://github.com/DanilChanyshev/OTUS-hm-selenium.git
             credentials-id: ssh_key
             branches:
-              - jenkins-job
+              - ansible
 
       script-path: pipeline/android-emulator-pipeline.groovy
