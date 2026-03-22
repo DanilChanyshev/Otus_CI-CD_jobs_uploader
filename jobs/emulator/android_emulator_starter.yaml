@@ -1,7 +1,7 @@
 ---
 - job:
-    name: mobile-tests
-    description: "<p style='color: green;'>Mobile tests pipeline</p>"
+    name: android-emulator
+    description: "<p style='color: green;'>Android emulator pipeline</p>"
 
     project-type: pipeline
     concurrent: true
@@ -20,4 +20,4 @@
             branches:
               - jenkins-job
 
-      script-path: pipeline/mobile-test-pipeline.groovy
+      script-path: pipeline/android-emulator-pipeline.groovy

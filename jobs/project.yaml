@@ -7,3 +7,4 @@
       - ui-test
       - mobile-tests
       - running-tests
+      - android-emulator

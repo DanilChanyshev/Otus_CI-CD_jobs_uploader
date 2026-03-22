@@ -11,6 +11,7 @@
       - ui-test
       - mobile-tests
       - running-tests
+      - android-emulator
     columns:
       - status
       - job
