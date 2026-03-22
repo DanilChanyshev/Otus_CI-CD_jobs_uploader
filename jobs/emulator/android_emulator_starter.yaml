@@ -15,7 +15,8 @@
     pipeline-scm:
       scm:
         - git:
-            url: https://github.com/DanilChanyshev/MobileTest.git
+#            url: https://github.com/DanilChanyshev/MobileTest.git
+            url: https://github.com/DanilChanyshev/OTUS-hm-selenium.git
             credentials-id: ssh_key
             branches:
               - jenkins-job
