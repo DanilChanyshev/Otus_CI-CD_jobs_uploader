@@ -9,17 +9,15 @@
     parameters:
       - string:
           name: BRANCH
-#          default: jenkins-job
-          default: ansible
+          default: jenkins-job
           description: "Git branch name"
 
     pipeline-scm:
       scm:
         - git:
-#            url: https://github.com/DanilChanyshev/MobileTest.git
-            url: https://github.com/DanilChanyshev/OTUS-hm-selenium.git
+            url: https://github.com/DanilChanyshev/MobileTest.git
             credentials-id: ssh_key
             branches:
-              - ansible
+              - jenkins-job
 
-      script-path: pipeline/selenoid-ui.groovy
+      script-path: pipeline/android-emulator-pipeline.groovy
