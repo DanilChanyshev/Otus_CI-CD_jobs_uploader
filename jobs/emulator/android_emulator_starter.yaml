@@ -22,4 +22,4 @@
             branches:
               - ansible
 
-      script-path: pipeline/android-emulator-pipeline.groovy
+      script-path: pipeline/selenoid-ui.groovy
